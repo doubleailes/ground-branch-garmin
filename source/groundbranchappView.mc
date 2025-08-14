@@ -14,6 +14,7 @@ class groundbranchappView extends WatchUi.View {
     const COLOR_NORTH = Graphics.COLOR_RED;
     var _cx, _cy, _radius;
     var _lastHeadingDeg = 0.0;
+    var _timer;
 
     function initialize() {
         System.println("Initializing groundbranchappView");
@@ -33,7 +34,12 @@ class groundbranchappView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        System.println("Showing groundbranchappView");
+        _timer = new Timer.Timer();
+        _timer.start(method(:_onTick), 1000, true); // 1000 ms, repeating
+    }
+
+    function _onTick() as Void {
+        WatchUi.requestUpdate(); // will call onUpdate()
     }
 
     // Update the view
@@ -49,7 +55,7 @@ class groundbranchappView extends WatchUi.View {
         var t = System.getClockTime();
         var timeStr = Lang.format("$1$:$2$", [t.hour, t.min.format("%02d")]);
         dc.setColor(COLOR_TEXT, COLOR_BG);
-        dc.drawText(_cx, _cy - 8, Graphics.FONT_LARGE, timeStr, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(_cx, _cy - 76, Graphics.FONT_NUMBER_THAI_HOT, timeStr, Graphics.TEXT_JUSTIFY_CENTER);
 
         // --- heading
         var h = getHeadingDegrees();
@@ -113,7 +119,10 @@ class groundbranchappView extends WatchUi.View {
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
-    function onHide() as Void {
+    function onHide() {
+        if (_timer != null) {
+            _timer.stop();
+        }
     }
 
 }
