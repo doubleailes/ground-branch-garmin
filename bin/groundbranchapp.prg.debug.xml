@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="2" lineNum="5" parent="globals/groundbranchappApp" pc="268435481" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappDelegate.mc" id="3" lineNum="4" parent="globals/groundbranchappDelegate" pc="268435493" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="4" lineNum="10" parent="globals/groundbranchappView" pc="268435505" symbol="&lt;init&gt;"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435517" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappMenuDelegate.mc" id="6" lineNum="5" parent="globals/groundbranchappMenuDelegate" pc="268435537" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="7" lineNum="12" parent="globals/groundbranchappApp" pc="268435549" symbol="onStart"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="8" lineNum="20" parent="globals/groundbranchappApp" pc="268435552" symbol="getInitialView"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="8" lineNum="21" parent="globals/groundbranchappApp" pc="268435554" symbol="getInitialView"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="9" lineNum="7" parent="globals/groundbranchappApp" pc="268435580" symbol="initialize"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="9" lineNum="8" parent="globals/groundbranchappApp" pc="268435582" symbol="initialize"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappApp.mc" id="10" lineNum="16" parent="globals/groundbranchappApp" pc="268435595" symbol="onStop"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappDelegate.mc" id="11" lineNum="10" parent="globals/groundbranchappDelegate" pc="268435598" symbol="onMenu"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappDelegate.mc" id="11" lineNum="11" parent="globals/groundbranchappDelegate" pc="268435600" symbol="onMenu"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappDelegate.mc" id="11" lineNum="12" parent="globals/groundbranchappDelegate" pc="268435665" symbol="onMenu"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappDelegate.mc" id="12" lineNum="6" parent="globals/groundbranchappDelegate" pc="268435667" symbol="initialize"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappDelegate.mc" id="12" lineNum="7" parent="globals/groundbranchappDelegate" pc="268435669" symbol="initialize"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="13" lineNum="35" parent="globals/groundbranchappView" pc="268435682" symbol="onShow"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="13" lineNum="36" parent="globals/groundbranchappView" pc="268435684" symbol="onShow"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="14" lineNum="24" parent="globals/groundbranchappView" pc="268435703" symbol="onLayout"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="14" lineNum="25" parent="globals/groundbranchappView" pc="268435705" symbol="onLayout"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="14" lineNum="26" parent="globals/groundbranchappView" pc="268435723" symbol="onLayout"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="14" lineNum="27" parent="globals/groundbranchappView" pc="268435743" symbol="onLayout"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="14" lineNum="29" parent="globals/groundbranchappView" pc="268435763" symbol="onLayout"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="15" lineNum="104" parent="globals/groundbranchappView" pc="268435812" symbol="getHeadingDegrees"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="15" lineNum="105" parent="globals/groundbranchappView" pc="268435815" symbol="getHeadingDegrees"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="15" lineNum="106" parent="globals/groundbranchappView" pc="268435839" symbol="getHeadingDegrees"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="15" lineNum="107" parent="globals/groundbranchappView" pc="268435851" symbol="getHeadingDegrees"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="15" lineNum="108" parent="globals/groundbranchappView" pc="268435868" symbol="getHeadingDegrees"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="15" lineNum="110" parent="globals/groundbranchappView" pc="268435897" symbol="getHeadingDegrees"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="16" lineNum="18" parent="globals/groundbranchappView" pc="268435903" symbol="initialize"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="16" lineNum="19" parent="globals/groundbranchappView" pc="268435905" symbol="initialize"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="16" lineNum="20" parent="globals/groundbranchappView" pc="268435923" symbol="initialize"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="40" parent="globals/groundbranchappView" pc="268435936" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="41" parent="globals/groundbranchappView" pc="268435939" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="45" parent="globals/groundbranchappView" pc="268435957" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="46" parent="globals/groundbranchappView" pc="268435973" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="49" parent="globals/groundbranchappView" pc="268435981" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="50" parent="globals/groundbranchappView" pc="268435993" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="51" parent="globals/groundbranchappView" pc="268436047" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="52" parent="globals/groundbranchappView" pc="268436063" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="55" parent="globals/groundbranchappView" pc="268436092" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="56" parent="globals/groundbranchappView" pc="268436100" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="59" parent="globals/groundbranchappView" pc="268436121" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="18" lineNum="60" parent="globals/groundbranchappView" pc="268436135" symbol="onUpdate"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="63" parent="globals/groundbranchappView" pc="268436150" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="64" parent="globals/groundbranchappView" pc="268436153" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="67" parent="globals/groundbranchappView" pc="268436196" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="68" parent="globals/groundbranchappView" pc="268436201" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="69" parent="globals/groundbranchappView" pc="268436208" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="71" parent="globals/groundbranchappView" pc="268436218" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="72" parent="globals/groundbranchappView" pc="268436225" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="74" parent="globals/groundbranchappView" pc="268436232" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="76" parent="globals/groundbranchappView" pc="268436247" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="77" parent="globals/groundbranchappView" pc="268436251" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="79" parent="globals/groundbranchappView" pc="268436255" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="80" parent="globals/groundbranchappView" pc="268436271" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="81" parent="globals/groundbranchappView" pc="268436281" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="83" parent="globals/groundbranchappView" pc="268436297" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="84" parent="globals/groundbranchappView" pc="268436325" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="86" parent="globals/groundbranchappView" pc="268436353" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="87" parent="globals/groundbranchappView" pc="268436366" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="89" parent="globals/groundbranchappView" pc="268436380" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="90" parent="globals/groundbranchappView" pc="268436398" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="92" parent="globals/groundbranchappView" pc="268436414" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="92" parent="globals/groundbranchappView" pc="268436419" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="94" parent="globals/groundbranchappView" pc="268436429" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappView.mc" id="19" lineNum="95" parent="globals/groundbranchappView" pc="268436442" symbol="_drawCompassRing"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappMenuDelegate.mc" id="20" lineNum="11" parent="globals/groundbranchappMenuDelegate" pc="268436476" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappMenuDelegate.mc" id="20" lineNum="12" parent="globals/groundbranchappMenuDelegate" pc="268436478" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappMenuDelegate.mc" id="20" lineNum="13" parent="globals/groundbranchappMenuDelegate" pc="268436489" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappMenuDelegate.mc" id="20" lineNum="14" parent="globals/groundbranchappMenuDelegate" pc="268436510" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappMenuDelegate.mc" id="20" lineNum="15" parent="globals/groundbranchappMenuDelegate" pc="268436521" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappMenuDelegate.mc" id="21" lineNum="7" parent="globals/groundbranchappMenuDelegate" pc="268436543" symbol="initialize"/>
+<entry filename="C:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\source\\groundbranchappMenuDelegate.mc" id="21" lineNum="8" parent="globals/groundbranchappMenuDelegate" pc="268436545" symbol="initialize"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="22" lineNum="14" parent="globals/Rez/Layouts" pc="268436558" symbol="MainLayout"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="22" lineNum="15" parent="globals/Rez/Layouts" pc="268436569" symbol="MainLayout"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="22" lineNum="17" parent="globals/Rez/Layouts" pc="268436669" symbol="MainLayout"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="22" lineNum="18" parent="globals/Rez/Layouts" pc="268436753" symbol="MainLayout"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="22" lineNum="20" parent="globals/Rez/Layouts" pc="268436785" symbol="MainLayout"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="23" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268436800" symbol="&lt;init&gt;"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="24" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268436812" symbol="initialize"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="24" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268436814" symbol="initialize"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="24" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268436826" symbol="initialize"/>
+<entry filename="c:\\Users\\philippe.llerena\\workspace\\github.com\\doubleailes\\groundbranchapp\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="24" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268436871" symbol="initialize"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8389346" symbol="text"/>
+<entry id="16" method="true" symbol="getHeadingDegrees"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="5" module="true" symbol="globals/Rez/Menus"/>
+<entry id="21" method="true" symbol="MainLayout"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="23" symbol="AppName"/>
+<entry id="6" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="26" symbol="prompt"/>
+<entry field="true" id="20" symbol="id_monkey"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="28" symbol="item_2"/>
+<entry id="27" symbol="item_1"/>
+<entry id="18" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="7" object="true" symbol="groundbranchappApp"/>
+<entry id="22" object="true" symbol="MainMenu"/>
+<entry field="true" id="12" symbol="_cy"/>
+<entry field="true" id="11" symbol="_cx"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="15" symbol="_radius"/>
+<entry field="true" id="19" symbol="LauncherIcon"/>
+<entry field="true" id="14" symbol="_lastHeadingDeg"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="10" object="true" symbol="groundbranchappView"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry field="true" id="8389347" symbol="color"/>
+<entry id="9" object="true" symbol="groundbranchappMenuDelegate"/>
+<entry id="8" object="true" symbol="groundbranchappDelegate"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry id="17" module="true" symbol="Layouts"/>
+<entry id="13" method="true" symbol="_drawCompassRing"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="25" symbol="menu_label_2"/>
+<entry field="true" id="24" symbol="menu_label_1"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435811" name="dc" stackId="1" startPc="268435703"/>
+<entry endPc="268435902" name="info" stackId="1" startPc="268435815"/>
+<entry arg="true" endPc="268436149" name="dc" stackId="1" startPc="268435936"/>
+<entry endPc="268436148" name="t" stackId="2" startPc="268435939"/>
+<entry endPc="268436148" name="timeStr" stackId="3" startPc="268435939"/>
+<entry endPc="268436148" name="h" stackId="4" startPc="268435939"/>
+<entry arg="true" endPc="268436475" name="dc" stackId="1" startPc="268436150"/>
+<entry arg="true" endPc="268436475" name="isNorthRing" stackId="2" startPc="268436150"/>
+<entry arg="true" endPc="268436475" name="headingDeg" stackId="3" startPc="268436150"/>
+<entry endPc="268436474" name="labels" stackId="4" startPc="268436153"/>
+<entry endPc="268436474" name="color" stackId="5" startPc="268436153"/>
+<entry endPc="268436474" name="step" stackId="6" startPc="268436153"/>
+<entry endPc="268436474" name="fontAll" stackId="7" startPc="268436153"/>
+<entry endPc="268436474" name="fontNorth" stackId="8" startPc="268436153"/>
+<entry endPc="268436474" name="i" stackId="9" startPc="268436271"/>
+<entry endPc="268436464" name="aDeg" stackId="10" startPc="268436271"/>
+<entry endPc="268436464" name="aRad" stackId="11" startPc="268436271"/>
+<entry endPc="268436464" name="x" stackId="12" startPc="268436271"/>
+<entry endPc="268436464" name="y" stackId="13" startPc="268436271"/>
+<entry endPc="268436464" name="isNorth" stackId="14" startPc="268436271"/>
+<entry endPc="268436464" name="fontUse" stackId="15" startPc="268436271"/>
+<entry endPc="268436464" name="dims" stackId="16" startPc="268436271"/>
+<entry endPc="268436464" name="yCentered" stackId="17" startPc="268436271"/>
+<entry arg="true" endPc="268436542" name="item" stackId="1" startPc="268436476"/>
+<entry arg="true" endPc="268436799" name="dc" stackId="1" startPc="268436558"/>
+<entry endPc="268436799" name="rez_cmp_local_text_1193959466" stackId="2" startPc="268436569"/>
+<entry endPc="268436799" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436569"/>
+</localVars>
+<deviceInfo deviceVersion="48076f5f0cfe8aac89996f19d8b33833f36da75c" partNumber="006-B4587-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/groundbranchappApp" offset="152" parentId="globals" symbolId="groundbranchappApp" type="class"/>
+<dataEntry label="globals/groundbranchappDelegate" offset="223" parentId="globals" symbolId="groundbranchappDelegate" type="class"/>
+<dataEntry label="globals/groundbranchappView" offset="276" parentId="globals" symbolId="groundbranchappView" type="class"/>
+<dataEntry label="globals/Rez" offset="410" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/groundbranchappMenuDelegate" offset="472" parentId="globals" symbolId="groundbranchappMenuDelegate" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="525" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="569" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="604" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="639" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/Menus/MainMenu" offset="701" parentId="Menus" symbolId="MainMenu" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="groundbranchappApp" startPc="268435481">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="groundbranchappDelegate" startPc="268435493">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435516" name="&lt;init&gt;" parent="groundbranchappView" startPc="268435505">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="Rez" startPc="268435517">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435548" name="&lt;init&gt;" parent="groundbranchappMenuDelegate" startPc="268435537">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435551" name="onStart" parent="groundbranchappApp" startPc="268435549">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435579" name="getInitialView" parent="groundbranchappApp" startPc="268435552">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435594" name="initialize" parent="groundbranchappApp" startPc="268435580">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435597" name="onStop" parent="groundbranchappApp" startPc="268435595">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435666" name="onMenu" parent="groundbranchappDelegate" startPc="268435598">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435681" name="initialize" parent="groundbranchappDelegate" startPc="268435667">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435702" name="onShow" parent="groundbranchappView" startPc="268435682">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435811" name="onLayout" parent="groundbranchappView" startPc="268435703">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435902" name="getHeadingDegrees" parent="groundbranchappView" startPc="268435812">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435935" name="initialize" parent="groundbranchappView" startPc="268435903">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="groundbranchappView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436149" name="onUpdate" parent="groundbranchappView" startPc="268435936">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436475" name="_drawCompassRing" parent="groundbranchappView" startPc="268436150">
+<param id="dc"/>
+<param id="isNorthRing"/>
+<param id="headingDeg"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436542" name="onMenuItem" parent="groundbranchappMenuDelegate" startPc="268436476">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436557" name="initialize" parent="groundbranchappMenuDelegate" startPc="268436543">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436799" name="MainLayout" parent="Layouts" startPc="268436558">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436811" name="&lt;init&gt;" parent="MainMenu" startPc="268436800">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436916" name="initialize" parent="MainMenu" startPc="268436812">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

@@ -1,0 +1,726 @@
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Math,3,14,18]; ]
+import Toybox.Math;
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Activity,4,14,22]; ]
+import Toybox.Activity;
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [System,5,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Timer,6,14,19]; ]
+import Toybox.Timer;
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [WatchUi,7,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 10; @symbol_classdef = [groundbranchappView,10,6,25]; @symbol_extends<0> = [WatchUi,10,34,41]; @symbol_extends<1> = [View,10,42,46]; ]
+class groundbranchappView extends WatchUi.View {
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 10; ]
+    <init> {
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 12 10 ]
+        symbol [ Graphics %tmp.1 12 24 32 ];
+        %tmp.1 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.2 12 33 44 ];
+        %tmp.2 = getv %tmp.1 :COLOR_BLACK;
+        putv self :COLOR_BG %tmp.2;
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 13 10 ]
+        symbol [ Graphics %tmp.3 13 24 32 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 13 33 44 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        putv self :COLOR_TEXT %tmp.4;
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 14 10 ]
+        symbol [ Graphics %tmp.5 14 24 32 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.6 14 33 42 ];
+        %tmp.6 = getv %tmp.5 :COLOR_RED;
+        putv self :COLOR_NORTH %tmp.6;
+    }
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 12; @position = 10; @symbol_constdef = [COLOR_BG,12,10,18]; ]
+    const COLOR_BG;
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 13; @position = 10; @symbol_constdef = [COLOR_TEXT,13,10,20]; ]
+    const COLOR_TEXT;
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 14; @position = 10; @symbol_constdef = [COLOR_NORTH,14,10,21]; ]
+    const COLOR_NORTH;
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 15; @position = 8; @symbol_vardef = [_cx,15,8,11]; ]
+    var _cx;
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 15; @position = 13; @symbol_vardef = [_cy,15,13,16]; ]
+    var _cy;
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 15; @position = 18; @symbol_vardef = [_radius,15,18,25]; ]
+    var _radius;
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 16; @position = 8; @symbol_vardef = [_lastHeadingDeg,16,8,23]; ]
+    var _lastHeadingDeg = 0.0;
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 18; @symbol_functiondef = [initialize,18,13,23]; ]
+    function initialize() as Void {
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_18_26_21_4_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 19 8 ]
+        symbol [ System %tmp.1 19 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 19 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Initializing groundbranchappView";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 20 8 ]
+        symbol [ View %tmp.5 20 8 12 ];
+        %tmp.5 = getv ? :View;
+        symbol [ initialize %tmp.6 20 13 23 ];
+        %tmp.6 = getv function %tmp.5 :initialize;
+        invoke %tmp.5 %tmp.6();
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_18_26_21_4_stop:
+    }
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 24; @symbol_functiondef = [onLayout,24,13,21]; @symbol_param<0> = [dc,24,22,24]; @symbol_param<0>_type<0> = [Dc,24,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_24_40_30_4_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 25 8 ]
+        symbol [ System %tmp.1 25 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 25 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Layouting groundbranchappView";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 26 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 26 14 16 ];
+        symbol [ getWidth %tmp.5 26 17 25 ];
+        %tmp.5 = getv function %tmp.4 :getWidth;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = 2.0;
+        %tmp.8 = div %tmp.6 %tmp.7;
+        symbol [ _cx ? 26 8 11 ];
+        putv self :_cx %tmp.8;
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 27 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 27 14 16 ];
+        symbol [ getHeight %tmp.10 27 17 26 ];
+        %tmp.10 = getv function %tmp.9 :getHeight;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = 2.0;
+        %tmp.13 = div %tmp.11 %tmp.12;
+        symbol [ _cy ? 27 8 11 ];
+        putv self :_cy %tmp.13;
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 29 8 ]
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_begin:
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 29 19 21 ];
+        symbol [ getWidth %tmp.15 29 22 30 ];
+        %tmp.15 = getv function %tmp.14 :getWidth;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 29 35 37 ];
+        symbol [ getHeight %tmp.18 29 38 47 ];
+        %tmp.18 = getv function %tmp.17 :getHeight;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = lt %tmp.16 %tmp.19;
+        bf %tmp.20 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_false;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_true:
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 29 52 54 ];
+        symbol [ getWidth %tmp.22 29 55 63 ];
+        %tmp.22 = getv function %tmp.21 :getWidth;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        push %tmp.23;
+        goto @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_false:
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 29 68 70 ];
+        symbol [ getHeight %tmp.25 29 71 80 ];
+        %tmp.25 = getv function %tmp.24 :getHeight;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        push %tmp.26;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_end:
+        %tmp.27 = phi [%tmp.20 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_begin] [%tmp.23 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_true] [%tmp.26 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_false] [%tmp.27 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_29_19_29_81_end];
+        %tmp.28 = 0.40;
+        %tmp.29 = mul %tmp.27 %tmp.28;
+        symbol [ _radius ? 29 8 15 ];
+        putv self :_radius %tmp.29;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_24_40_30_4_stop:
+    }
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 35; @symbol_functiondef = [onShow,35,13,19]; ]
+    function onShow() as Void {
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_35_30_37_4_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 36 8 ]
+        symbol [ System %tmp.1 36 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 36 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Showing groundbranchappView";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_35_30_37_4_stop:
+    }
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 40; @symbol_functiondef = [onUpdate,40,13,21]; @symbol_param<0> = [dc,40,22,24]; @symbol_param<0>_type<0> = [Dc,40,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_40_40_61_4_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 41 8 ]
+        symbol [ System %tmp.1 41 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 41 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Updating groundbranchappView";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 45 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 45 8 10 ];
+        symbol [ setColor %tmp.5 45 11 19 ];
+        %tmp.5 = getv function %tmp.4 :setColor;
+        symbol [ COLOR_TEXT %tmp.7 45 20 30 ];
+        %tmp.7 = getv ? :COLOR_TEXT;
+        symbol [ COLOR_BG %tmp.9 45 32 40 ];
+        %tmp.9 = getv ? :COLOR_BG;
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.9);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 46 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 46 8 10 ];
+        symbol [ clear %tmp.11 46 11 16 ];
+        %tmp.11 = getv function %tmp.10 :clear;
+        invoke %tmp.10 %tmp.11();
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 49 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_40_40_61_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_40_40_61_4_stop" ]
+        %t.1 = local;
+        symbol [ t %t.1 49 12 13 ];
+        symbol [ System %tmp.12 49 16 22 ];
+        %tmp.12 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.13 49 23 35 ];
+        %tmp.13 = getv function %tmp.12 :getClockTime;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %t.1 %tmp.14;
+        symbol [ t %t.1 49 12 13 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 50 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_40_40_61_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_40_40_61_4_stop" ]
+        %timeStr.2 = local;
+        symbol [ timeStr %timeStr.2 50 12 19 ];
+        symbol [ Lang %tmp.15 50 22 26 ];
+        %tmp.15 = getm $.Toybox.Lang;
+        symbol [ format %tmp.16 50 27 33 ];
+        %tmp.16 = getv function %tmp.15 :format;
+        %tmp.17 = "$1$:$2$";
+        %tmp.18 = newa 2;
+        %tmp.19 = lgetv %t.1;
+        symbol [ t %tmp.19 50 46 47 ];
+        symbol [ hour %tmp.20 50 48 52 ];
+        %tmp.20 = getv %tmp.19 :hour;
+        %tmp.21 = dup %tmp.18;
+        %tmp.22 = aputv %tmp.21 0 %tmp.20;
+        %tmp.23 = lgetv %t.1;
+        symbol [ t %tmp.23 50 54 55 ];
+        symbol [ min %tmp.24 50 56 59 ];
+        %tmp.24 = getv %tmp.23 :min;
+        symbol [ format %tmp.25 50 60 66 ];
+        %tmp.25 = getv function %tmp.24 :format;
+        %tmp.26 = "%02d";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        %tmp.28 = dup %tmp.22;
+        %tmp.29 = aputv %tmp.28 1 %tmp.27;
+        %tmp.30 = invoke %tmp.15 %tmp.16(%tmp.17, %tmp.29);
+        lputv %timeStr.2 %tmp.30;
+        symbol [ timeStr %timeStr.2 50 12 19 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 51 8 ]
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 51 8 10 ];
+        symbol [ setColor %tmp.32 51 11 19 ];
+        %tmp.32 = getv function %tmp.31 :setColor;
+        symbol [ COLOR_TEXT %tmp.34 51 20 30 ];
+        %tmp.34 = getv ? :COLOR_TEXT;
+        symbol [ COLOR_BG %tmp.36 51 32 40 ];
+        %tmp.36 = getv ? :COLOR_BG;
+        invoke %tmp.31 %tmp.32(%tmp.34, %tmp.36);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 52 8 ]
+        %tmp.37 = lgetv %dc;
+        symbol [ dc %tmp.37 52 8 10 ];
+        symbol [ drawText %tmp.38 52 11 19 ];
+        %tmp.38 = getv function %tmp.37 :drawText;
+        symbol [ _cx %tmp.40 52 20 23 ];
+        %tmp.40 = getv ? :_cx;
+        symbol [ _cy %tmp.42 52 25 28 ];
+        %tmp.42 = getv ? :_cy;
+        %tmp.43 = 8;
+        %tmp.44 = sub %tmp.42 %tmp.43;
+        symbol [ Graphics %tmp.45 52 34 42 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.46 52 43 53 ];
+        %tmp.46 = getv %tmp.45 :FONT_LARGE;
+        %tmp.47 = lgetv %timeStr.2;
+        symbol [ timeStr %tmp.47 52 55 62 ];
+        symbol [ Graphics %tmp.48 52 64 72 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.49 52 73 92 ];
+        %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.37 %tmp.38(%tmp.40, %tmp.44, %tmp.46, %tmp.47, %tmp.49);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 55 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_40_40_61_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_40_40_61_4_stop" ]
+        %h.3 = local;
+        symbol [ h %h.3 55 12 13 ];
+        %tmp.50 = self;
+        symbol [ getHeadingDegrees %tmp.51 55 16 33 ];
+        %tmp.51 = getv function %tmp.50 :getHeadingDegrees;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        lputv %h.3 %tmp.52;
+        symbol [ h %h.3 55 12 13 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 56 8 ]
+        symbol [ System %tmp.53 56 8 14 ];
+        %tmp.53 = getm $.Toybox.System;
+        symbol [ println %tmp.54 56 15 22 ];
+        %tmp.54 = getv function %tmp.53 :println;
+        %tmp.55 = "Heading (deg): ";
+        %tmp.56 = lgetv %h.3;
+        symbol [ h %tmp.56 56 43 44 ];
+        %tmp.57 = add %tmp.55 %tmp.56;
+        invoke %tmp.53 %tmp.54(%tmp.57);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 59 8 ]
+        %tmp.58 = self;
+        symbol [ _drawCompassRing %tmp.59 59 8 24 ];
+        %tmp.59 = getv function %tmp.58 :_drawCompassRing;
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 59 25 27 ];
+        %tmp.61 = false;
+        %tmp.62 = lgetv %h.3;
+        symbol [ h %tmp.62 59 36 37 ];
+        invoke %tmp.58 %tmp.59(%tmp.60, %tmp.61, %tmp.62);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 60 8 ]
+        %tmp.63 = self;
+        symbol [ _drawCompassRing %tmp.64 60 8 24 ];
+        %tmp.64 = getv function %tmp.63 :_drawCompassRing;
+        %tmp.65 = lgetv %dc;
+        symbol [ dc %tmp.65 60 25 27 ];
+        %tmp.66 = true;
+        %tmp.67 = lgetv %h.3;
+        symbol [ h %tmp.67 60 36 37 ];
+        invoke %tmp.63 %tmp.64(%tmp.65, %tmp.66, %tmp.67);
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_40_40_61_4_stop:
+    }
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 63; @symbol_functiondef = [_drawCompassRing,63,13,29]; @symbol_param<0> = [dc,63,30,32]; @symbol_param<0>_type<0> = [Dc,63,36,38]; @symbol_param<1> = [isNorthRing,63,40,51]; @symbol_param<1>_type<0> = [Boolean,63,55,62]; @symbol_param<2> = [headingDeg,63,64,74]; @symbol_param<2>_type<0> = [Float,63,78,83]; ]
+    function _drawCompassRing(dc as Dc, isNorthRing as Boolean, headingDeg as Float) as Void {
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 64 8 ]
+        symbol [ System %tmp.1 64 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 64 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Drawing ";
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_begin:
+        %tmp.4 = lgetv %isNorthRing;
+        symbol [ isNorthRing %tmp.4 64 37 48 ];
+        bf %tmp.4 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_false;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_true:
+        %tmp.5 = "North";
+        push %tmp.5;
+        goto @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_false:
+        %tmp.6 = "South";
+        push %tmp.6;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_end:
+        %tmp.7 = phi [%tmp.4 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_begin] [%tmp.5 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_true] [%tmp.6 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_false] [%tmp.7 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_64_37_64_61_end];
+        %tmp.8 = add %tmp.3 %tmp.7;
+        %tmp.9 = " Compass Ring";
+        %tmp.10 = add %tmp.8 %tmp.9;
+        invoke %tmp.1 %tmp.2(%tmp.10);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 65 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_stop" ]
+        %labels.1 = local;
+        symbol [ labels %labels.1 65 12 18 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 66 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_stop" ]
+        %color.2 = local;
+        symbol [ color %color.2 66 12 17 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 67 8 ]
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_67_8_73_8_if_stmt:
+        %tmp.11 = lgetv %isNorthRing;
+        symbol [ isNorthRing %tmp.11 67 12 23 ];
+        bf %tmp.11 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_67_8_73_8_if_else_false;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_67_8_73_8_if_true:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_67_25_70_8_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 68 12 ]
+        %tmp.12 = newa 8;
+        %tmp.13 = "N";
+        %tmp.14 = dup %tmp.12;
+        %tmp.15 = aputv %tmp.14 0 %tmp.13;
+        %tmp.16 = "";
+        %tmp.17 = dup %tmp.15;
+        %tmp.18 = aputv %tmp.17 1 %tmp.16;
+        %tmp.19 = "";
+        %tmp.20 = dup %tmp.18;
+        %tmp.21 = aputv %tmp.20 2 %tmp.19;
+        %tmp.22 = "";
+        %tmp.23 = dup %tmp.21;
+        %tmp.24 = aputv %tmp.23 3 %tmp.22;
+        %tmp.25 = "";
+        %tmp.26 = dup %tmp.24;
+        %tmp.27 = aputv %tmp.26 4 %tmp.25;
+        %tmp.28 = "";
+        %tmp.29 = dup %tmp.27;
+        %tmp.30 = aputv %tmp.29 5 %tmp.28;
+        %tmp.31 = "";
+        %tmp.32 = dup %tmp.30;
+        %tmp.33 = aputv %tmp.32 6 %tmp.31;
+        %tmp.34 = "";
+        %tmp.35 = dup %tmp.33;
+        %tmp.36 = aputv %tmp.35 7 %tmp.34;
+        lputv %labels.1 %tmp.36;
+        symbol [ labels %labels.1 68 12 18 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 69 12 ]
+        symbol [ COLOR_NORTH %tmp.38 69 20 31 ];
+        %tmp.38 = getv ? :COLOR_NORTH;
+        lputv %color.2 %tmp.38;
+        symbol [ color %color.2 69 12 17 ];
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_67_25_70_8_stop:
+        goto @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_67_8_73_8_if_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_67_8_73_8_if_else_false:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_70_15_73_8_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 71 12 ]
+        %tmp.39 = newa 8;
+        %tmp.40 = "";
+        %tmp.41 = dup %tmp.39;
+        %tmp.42 = aputv %tmp.41 0 %tmp.40;
+        %tmp.43 = "NE";
+        %tmp.44 = dup %tmp.42;
+        %tmp.45 = aputv %tmp.44 1 %tmp.43;
+        %tmp.46 = "E";
+        %tmp.47 = dup %tmp.45;
+        %tmp.48 = aputv %tmp.47 2 %tmp.46;
+        %tmp.49 = "SE";
+        %tmp.50 = dup %tmp.48;
+        %tmp.51 = aputv %tmp.50 3 %tmp.49;
+        %tmp.52 = "S";
+        %tmp.53 = dup %tmp.51;
+        %tmp.54 = aputv %tmp.53 4 %tmp.52;
+        %tmp.55 = "SW";
+        %tmp.56 = dup %tmp.54;
+        %tmp.57 = aputv %tmp.56 5 %tmp.55;
+        %tmp.58 = "W";
+        %tmp.59 = dup %tmp.57;
+        %tmp.60 = aputv %tmp.59 6 %tmp.58;
+        %tmp.61 = "NW";
+        %tmp.62 = dup %tmp.60;
+        %tmp.63 = aputv %tmp.62 7 %tmp.61;
+        lputv %labels.1 %tmp.63;
+        symbol [ labels %labels.1 71 12 18 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 72 12 ]
+        symbol [ COLOR_TEXT %tmp.65 72 20 30 ];
+        %tmp.65 = getv ? :COLOR_TEXT;
+        lputv %color.2 %tmp.65;
+        symbol [ color %color.2 72 12 17 ];
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_70_15_73_8_stop:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_67_8_73_8_if_end:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 74 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_stop" ]
+        %step.3 = local;
+        symbol [ step %step.3 74 12 16 ];
+        %tmp.66 = 360.0;
+        %tmp.67 = lgetv %labels.1;
+        symbol [ labels %tmp.67 74 27 33 ];
+        symbol [ size %tmp.68 74 34 38 ];
+        %tmp.68 = getv function %tmp.67 :size;
+        %tmp.69 = invoke %tmp.67 %tmp.68();
+        %tmp.70 = div %tmp.66 %tmp.69;
+        lputv %step.3 %tmp.70;
+        symbol [ step %step.3 74 12 16 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 76 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_stop" ]
+        %fontAll.4 = local;
+        symbol [ fontAll %fontAll.4 76 12 19 ];
+        symbol [ Graphics %tmp.71 76 24 32 ];
+        %tmp.71 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.72 76 33 42 ];
+        %tmp.72 = getv %tmp.71 :FONT_TINY;
+        lputv %fontAll.4 %tmp.72;
+        symbol [ fontAll %fontAll.4 76 12 19 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 77 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_stop" ]
+        %fontNorth.5 = local;
+        symbol [ fontNorth %fontNorth.5 77 12 21 ];
+        symbol [ Graphics %tmp.73 77 24 32 ];
+        %tmp.73 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.74 77 33 42 ];
+        %tmp.74 = getv %tmp.73 :FONT_TINY;
+        lputv %fontNorth.5 %tmp.74;
+        symbol [ fontNorth %fontNorth.5 77 12 21 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 79 8 ]
+        for @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_test @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_incr @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_init:
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_begin" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_end" ]
+        %i.6 = local;
+        symbol [ i %i.6 79 17 18 ];
+        %tmp.75 = 0;
+        lputv %i.6 %tmp.75;
+        symbol [ i %i.6 79 17 18 ];
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_test:
+        %tmp.76 = lgetv %i.6;
+        symbol [ i %tmp.76 79 24 25 ];
+        %tmp.77 = lgetv %labels.1;
+        symbol [ labels %tmp.77 79 28 34 ];
+        symbol [ size %tmp.78 79 35 39 ];
+        %tmp.78 = getv function %tmp.77 :size;
+        %tmp.79 = invoke %tmp.77 %tmp.78();
+        %tmp.80 = lt %tmp.76 %tmp.79;
+        bf %tmp.80 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_begin:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 80 12 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop" ]
+        %aDeg.7 = local;
+        symbol [ aDeg %aDeg.7 80 16 20 ];
+        %tmp.81 = lgetv %i.6;
+        symbol [ i %tmp.81 80 24 25 ];
+        %tmp.82 = lgetv %step.3;
+        symbol [ step %tmp.82 80 28 32 ];
+        %tmp.83 = mul %tmp.81 %tmp.82;
+        %tmp.84 = lgetv %headingDeg;
+        symbol [ headingDeg %tmp.84 80 36 46 ];
+        %tmp.85 = sub %tmp.83 %tmp.84;
+        lputv %aDeg.7 %tmp.85;
+        symbol [ aDeg %aDeg.7 80 16 20 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 81 12 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop" ]
+        %aRad.8 = local;
+        symbol [ aRad %aRad.8 81 16 20 ];
+        symbol [ Math %tmp.86 81 23 27 ];
+        %tmp.86 = getm $.Toybox.Math;
+        symbol [ toRadians %tmp.87 81 28 37 ];
+        %tmp.87 = getv function %tmp.86 :toRadians;
+        %tmp.88 = lgetv %aDeg.7;
+        symbol [ aDeg %tmp.88 81 38 42 ];
+        %tmp.89 = invoke %tmp.86 %tmp.87(%tmp.88);
+        lputv %aRad.8 %tmp.89;
+        symbol [ aRad %aRad.8 81 16 20 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 83 12 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop" ]
+        %x.9 = local;
+        symbol [ x %x.9 83 16 17 ];
+        symbol [ _cx %tmp.91 83 20 23 ];
+        %tmp.91 = getv ? :_cx;
+        symbol [ _radius %tmp.93 83 26 33 ];
+        %tmp.93 = getv ? :_radius;
+        symbol [ Math %tmp.94 83 36 40 ];
+        %tmp.94 = getm $.Toybox.Math;
+        symbol [ sin %tmp.95 83 41 44 ];
+        %tmp.95 = getv function %tmp.94 :sin;
+        %tmp.96 = lgetv %aRad.8;
+        symbol [ aRad %tmp.96 83 45 49 ];
+        %tmp.97 = invoke %tmp.94 %tmp.95(%tmp.96);
+        %tmp.98 = mul %tmp.93 %tmp.97;
+        %tmp.99 = add %tmp.91 %tmp.98;
+        lputv %x.9 %tmp.99;
+        symbol [ x %x.9 83 16 17 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 84 12 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop" ]
+        %y.10 = local;
+        symbol [ y %y.10 84 16 17 ];
+        symbol [ _cy %tmp.101 84 20 23 ];
+        %tmp.101 = getv ? :_cy;
+        symbol [ _radius %tmp.103 84 26 33 ];
+        %tmp.103 = getv ? :_radius;
+        symbol [ Math %tmp.104 84 36 40 ];
+        %tmp.104 = getm $.Toybox.Math;
+        symbol [ cos %tmp.105 84 41 44 ];
+        %tmp.105 = getv function %tmp.104 :cos;
+        %tmp.106 = lgetv %aRad.8;
+        symbol [ aRad %tmp.106 84 45 49 ];
+        %tmp.107 = invoke %tmp.104 %tmp.105(%tmp.106);
+        %tmp.108 = mul %tmp.103 %tmp.107;
+        %tmp.109 = sub %tmp.101 %tmp.108;
+        lputv %y.10 %tmp.109;
+        symbol [ y %y.10 84 16 17 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 86 12 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop" ]
+        %isNorth.11 = local;
+        symbol [ isNorth %isNorth.11 86 16 23 ];
+        %tmp.110 = lgetv %labels.1;
+        symbol [ labels %tmp.110 86 27 33 ];
+        %tmp.111 = lgetv %i.6;
+        symbol [ i %tmp.111 86 34 35 ];
+        %tmp.112 = agetv %tmp.110 %tmp.111;
+        %tmp.113 = "N";
+        %tmp.114 = eq %tmp.112 %tmp.113;
+        lputv %isNorth.11 %tmp.114;
+        symbol [ isNorth %isNorth.11 86 16 23 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 87 12 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop" ]
+        %fontUse.12 = local;
+        symbol [ fontUse %fontUse.12 87 16 23 ];
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_begin:
+        %tmp.115 = lgetv %isNorth.11;
+        symbol [ isNorth %tmp.115 87 26 33 ];
+        bf %tmp.115 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_false;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_true:
+        %tmp.116 = lgetv %fontNorth.5;
+        symbol [ fontNorth %tmp.116 87 36 45 ];
+        push %tmp.116;
+        goto @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_false:
+        %tmp.117 = lgetv %fontAll.4;
+        symbol [ fontAll %tmp.117 87 48 55 ];
+        push %tmp.117;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_end:
+        %tmp.118 = phi [%tmp.115 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_begin] [%tmp.116 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_true] [%tmp.117 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_false] [%tmp.118 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_87_26_87_48_end];
+        lputv %fontUse.12 %tmp.118;
+        symbol [ fontUse %fontUse.12 87 16 23 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 89 12 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop" ]
+        %dims.13 = local;
+        symbol [ dims %dims.13 89 16 20 ];
+        %tmp.119 = lgetv %dc;
+        symbol [ dc %tmp.119 89 23 25 ];
+        symbol [ getTextDimensions %tmp.120 89 26 43 ];
+        %tmp.120 = getv function %tmp.119 :getTextDimensions;
+        %tmp.121 = lgetv %labels.1;
+        symbol [ labels %tmp.121 89 44 50 ];
+        %tmp.122 = lgetv %i.6;
+        symbol [ i %tmp.122 89 51 52 ];
+        %tmp.123 = agetv %tmp.121 %tmp.122;
+        %tmp.124 = lgetv %fontUse.12;
+        symbol [ fontUse %tmp.124 89 55 62 ];
+        %tmp.125 = invoke %tmp.119 %tmp.120(%tmp.123, %tmp.124);
+        lputv %dims.13 %tmp.125;
+        symbol [ dims %dims.13 89 16 20 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 90 12 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop" ]
+        %yCentered.14 = local;
+        symbol [ yCentered %yCentered.14 90 16 25 ];
+        %tmp.126 = lgetv %y.10;
+        symbol [ y %tmp.126 90 28 29 ];
+        %tmp.127 = lgetv %dims.13;
+        symbol [ dims %tmp.127 90 33 37 ];
+        %tmp.128 = 1;
+        %tmp.129 = agetv %tmp.127 %tmp.128;
+        %tmp.130 = 2.0;
+        %tmp.131 = div %tmp.129 %tmp.130;
+        %tmp.132 = sub %tmp.126 %tmp.131;
+        lputv %yCentered.14 %tmp.132;
+        symbol [ yCentered %yCentered.14 90 16 25 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 92 12 ]
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_92_12_92_43_if_stmt:
+        %tmp.133 = lgetv %isNorth.11;
+        symbol [ isNorth %tmp.133 92 16 23 ];
+        bf %tmp.133 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_92_12_92_43_if_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_92_12_92_43_if_true:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_92_25_92_43_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 92 27 ]
+        %tmp.134 = lgetv %yCentered.14;
+        symbol [ yCentered %tmp.134 92 27 36 ];
+        %tmp.135 = 2;
+        %tmp.136 = add %tmp.134 %tmp.135;
+        lputv %yCentered.14 %tmp.136;
+        symbol [ yCentered %yCentered.14 92 27 36 ];
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_92_25_92_43_stop:
+        goto @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_92_12_92_43_if_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_92_12_92_43_if_end:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 94 12 ]
+        %tmp.137 = lgetv %dc;
+        symbol [ dc %tmp.137 94 12 14 ];
+        symbol [ setColor %tmp.138 94 15 23 ];
+        %tmp.138 = getv function %tmp.137 :setColor;
+        %tmp.139 = lgetv %color.2;
+        symbol [ color %tmp.139 94 24 29 ];
+        symbol [ COLOR_BG %tmp.141 94 31 39 ];
+        %tmp.141 = getv ? :COLOR_BG;
+        invoke %tmp.137 %tmp.138(%tmp.139, %tmp.141);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 95 12 ]
+        %tmp.142 = lgetv %dc;
+        symbol [ dc %tmp.142 95 12 14 ];
+        symbol [ drawText %tmp.143 95 15 23 ];
+        %tmp.143 = getv function %tmp.142 :drawText;
+        %tmp.144 = lgetv %x.9;
+        symbol [ x %tmp.144 95 24 25 ];
+        %tmp.145 = lgetv %yCentered.14;
+        symbol [ yCentered %tmp.145 95 27 36 ];
+        %tmp.146 = lgetv %fontUse.12;
+        symbol [ fontUse %tmp.146 95 38 45 ];
+        %tmp.147 = lgetv %labels.1;
+        symbol [ labels %tmp.147 95 47 53 ];
+        %tmp.148 = lgetv %i.6;
+        symbol [ i %tmp.148 95 54 55 ];
+        %tmp.149 = agetv %tmp.147 %tmp.148;
+        symbol [ Graphics %tmp.150 95 58 66 ];
+        %tmp.150 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.151 95 67 86 ];
+        %tmp.151 = getv %tmp.150 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.142 %tmp.143(%tmp.144, %tmp.145, %tmp.146, %tmp.149, %tmp.151);
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_48_96_8_stop:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_incr:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 79 ]
+        %tmp.154 = lgetv %i.6;
+        symbol [ i %tmp.154 79 43 44 ];
+        %tmp.155 = add %tmp.154 1;
+        lputv %i.6 %tmp.155;
+        symbol [ i %i.6 79 43 44 ];
+        goto @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_test;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_79_8_96_8_for_end:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_63_93_102_4_stop:
+    }
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 104; @symbol_functiondef = [getHeadingDegrees,104,13,30]; @symbol_return<0> = [Float,104,36,41]; ]
+    function getHeadingDegrees() as Float {
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_104_42_111_4_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 105 8 ]
+        symbol [ System %tmp.1 105 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 105 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Current Heading: ";
+        symbol [ _lastHeadingDeg %tmp.5 105 45 60 ];
+        %tmp.5 = getv ? :_lastHeadingDeg;
+        %tmp.6 = add %tmp.3 %tmp.5;
+        invoke %tmp.1 %tmp.2(%tmp.6);
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 106 8 ]
+        [ "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_104_42_111_4_start" "C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_104_42_111_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 106 12 16 ];
+        symbol [ Activity %tmp.7 106 19 27 ];
+        %tmp.7 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.8 106 28 43 ];
+        %tmp.8 = getv function %tmp.7 :getActivityInfo;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        lputv %info.1 %tmp.9;
+        symbol [ info %info.1 106 12 16 ];
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 107 8 ]
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_8_109_8_if_stmt:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_12_107_51_begin:
+        %tmp.10 = lgetv %info.1;
+        symbol [ info %tmp.10 107 12 16 ];
+        %tmp.11 = null;
+        %tmp.12 = ne %tmp.10 %tmp.11;
+        bf %tmp.12 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_8_109_8_if_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_28_107_51_true:
+        %tmp.13 = lgetv %info.1;
+        symbol [ info %tmp.13 107 28 32 ];
+        %tmp.14 = as %tmp.13 { (!Null) };
+        symbol [ currentHeading %tmp.15 107 33 47 ];
+        %tmp.15 = getv %tmp.14 :currentHeading;
+        %tmp.16 = null;
+        %tmp.17 = ne %tmp.15 %tmp.16;
+        push %tmp.17;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_28_107_51_end:
+        %tmp.18 = phi [%tmp.12 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_12_107_51_begin] [%tmp.17 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_28_107_51_true] [%tmp.18 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_28_107_51_end];
+        bf %tmp.18 @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_8_109_8_if_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_8_109_8_if_true:
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_57_109_8_start:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 108 12 ]
+        symbol [ Math %tmp.19 108 30 34 ];
+        %tmp.19 = getm $.Toybox.Math;
+        symbol [ toDegrees %tmp.20 108 35 44 ];
+        %tmp.20 = getv function %tmp.19 :toDegrees;
+        %tmp.21 = lgetv %info.1;
+        symbol [ info %tmp.21 108 45 49 ];
+        %tmp.22 = as %tmp.21 { (!Null) };
+        symbol [ currentHeading %tmp.23 108 50 64 ];
+        %tmp.23 = getv %tmp.22 :currentHeading;
+        %tmp.24 = invoke %tmp.19 %tmp.20(%tmp.23);
+        symbol [ _lastHeadingDeg ? 108 12 27 ];
+        putv self :_lastHeadingDeg %tmp.24;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_57_109_8_stop:
+        goto @C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_8_109_8_if_end;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_107_8_109_8_if_end:
+[ "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc" 110 8 ]
+        symbol [ _lastHeadingDeg %tmp.26 110 15 30 ];
+        %tmp.26 = getv ? :_lastHeadingDeg;
+        ret %tmp.26;
+C__Users_philippe_llerena_workspace_github_com_doubleailes_groundbranchapp_source_groundbranchappView_mc_104_42_111_4_stop:
+    }
+    [ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 116; @symbol_functiondef = [onHide,116,13,19]; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "C:\Users\philippe.llerena\workspace\github.com\doubleailes\groundbranchapp\source\groundbranchappView.mc"; @line = 1; ]
+<init> {
+}
