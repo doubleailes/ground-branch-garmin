@@ -9,7 +9,11 @@ class groundbranchappMenuDelegate extends WatchUi.MenuInputDelegate {
     }
 
     function onMenuItem(item as Symbol) as Void {
-        if (item == :item_1) {
+        if (item == :settings) {
+            var settingsView = new SettingsView();
+            var settingsDelegate = new SettingsDelegate(settingsView);
+            WatchUi.pushView(settingsView, settingsDelegate, WatchUi.SLIDE_LEFT);
+        } else if (item == :item_1) {
             System.println("item 1");
         } else if (item == :item_2) {
             System.println("item 2");
