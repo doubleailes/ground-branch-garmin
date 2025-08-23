@@ -1,7 +1,7 @@
 # GroundBranch
 
-This repository is Watchface for Garmin Instinct 3 AMOLED Tactictal to match
-the layout of Ground Branch video games operator watch.
+This repository is an app for Garmin Instinct 3 AMOLED Tactictal to match
+the layout of Ground Branch video games operator's watch.
 
 ## References in game
 
