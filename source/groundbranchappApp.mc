@@ -20,6 +20,8 @@ class groundbranchappApp extends Application.AppBase {
 
     // onStop() is called when your application is exiting
     function onStop(state as Dictionary?) as Void {
+        // Save properties when exiting
+        saveProperties();
     }
 
     // Return the initial view of your application here
@@ -38,7 +40,11 @@ class groundbranchappApp extends Application.AppBase {
 
     // Set target latitude
     function setTargetLatitude(lat as Float) as Void {
+        // Clamp latitude to valid range (-90 to 90)
+        if (lat < -90.0) { lat = -90.0; }
+        if (lat > 90.0) { lat = 90.0; }
         setProperty("targetLatitude", lat);
+        saveProperties();
     }
 
     // Get target longitude from properties
@@ -52,7 +58,11 @@ class groundbranchappApp extends Application.AppBase {
 
     // Set target longitude
     function setTargetLongitude(lon as Float) as Void {
+        // Clamp longitude to valid range (-180 to 180)
+        if (lon < -180.0) { lon = -180.0; }
+        if (lon > 180.0) { lon = 180.0; }
         setProperty("targetLongitude", lon);
+        saveProperties();
     }
 
     // Get proximity radius from properties
@@ -66,7 +76,11 @@ class groundbranchappApp extends Application.AppBase {
 
     // Set proximity radius
     function setProximityRadius(radius as Float) as Void {
+        // Ensure radius is positive and reasonable
+        if (radius < 1.0) { radius = 1.0; }
+        if (radius > 1000.0) { radius = 1000.0; }
         setProperty("proximityRadius", radius);
+        saveProperties();
     }
 
 }

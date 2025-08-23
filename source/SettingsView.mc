@@ -64,9 +64,11 @@ class SettingsView extends WatchUi.View {
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(10, y, Graphics.FONT_XTINY, setting[:name], Graphics.TEXT_JUSTIFY_LEFT);
             
-            var valueStr = setting[:value].format("%.6f");
+            var valueStr;
             if (setting[:type] == :radius) {
                 valueStr = setting[:value].format("%.1f");
+            } else {
+                valueStr = setting[:value].format("%.6f");
             }
             dc.drawText(width - 10, y, Graphics.FONT_XTINY, valueStr, Graphics.TEXT_JUSTIFY_RIGHT);
         }
@@ -93,8 +95,20 @@ class SettingsView extends WatchUi.View {
     
     function selectCurrentItem() as Void {
         var setting = _settings[_selectedIndex];
-        var textPicker = new WatchUi.TextPicker(setting[:value].toString());
-        WatchUi.pushView(textPicker, new SettingsTextDelegate(setting, self), WatchUi.SLIDE_LEFT);
+        
+        if (setting[:type] == :latitude) {
+            // For latitude: -90.0 to 90.0
+            var picker = new WatchUi.NumberPicker(WatchUi.NUMBER_PICKER_DECIMAL, setting[:value], -90.0, 90.0);
+            WatchUi.pushView(picker, new SettingsNumberDelegate(setting, self), WatchUi.SLIDE_LEFT);
+        } else if (setting[:type] == :longitude) {
+            // For longitude: -180.0 to 180.0  
+            var picker = new WatchUi.NumberPicker(WatchUi.NUMBER_PICKER_DECIMAL, setting[:value], -180.0, 180.0);
+            WatchUi.pushView(picker, new SettingsNumberDelegate(setting, self), WatchUi.SLIDE_LEFT);
+        } else if (setting[:type] == :radius) {
+            // For radius: 1.0 to 1000.0 meters
+            var picker = new WatchUi.NumberPicker(WatchUi.NUMBER_PICKER_DECIMAL, setting[:value], 1.0, 1000.0);
+            WatchUi.pushView(picker, new SettingsNumberDelegate(setting, self), WatchUi.SLIDE_LEFT);
+        }
     }
     
     function updateSetting(index as Number, newValue as Float) as Void {
@@ -149,27 +163,20 @@ class SettingsDelegate extends WatchUi.BehaviorDelegate {
     }
 }
 
-class SettingsTextDelegate extends WatchUi.TextPickerDelegate {
+class SettingsNumberDelegate extends WatchUi.NumberPickerDelegate {
     
     var _setting;
     var _settingsView;
     
     function initialize(setting as Dictionary, settingsView as SettingsView) {
-        TextPickerDelegate.initialize();
+        NumberPickerDelegate.initialize();
         _setting = setting;
         _settingsView = settingsView;
     }
     
-    function onTextEntered(text as String, changed as Boolean) as Boolean {
-        if (changed) {
-            try {
-                var value = text.toFloat();
-                var index = _settingsView.getSelectedIndex();
-                _settingsView.updateSetting(index, value);
-            } catch (e) {
-                System.println("Invalid number format: " + text);
-            }
-        }
+    function onNumberPicked(value as Number) as Boolean {
+        var index = _settingsView.getSelectedIndex();
+        _settingsView.updateSetting(index, value.toFloat());
         WatchUi.popView(WatchUi.SLIDE_RIGHT);
         return true;
     }
