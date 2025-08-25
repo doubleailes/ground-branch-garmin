@@ -28,9 +28,9 @@ class groundbranchappView extends WatchUi.View {
     var lat, lon;
 
     // Target (your coords)
-    const TARGET_LAT = Properties.getValue("target_lattitude");
-    const TARGET_LON = Properties.getValue("target_longitude");
-    const RADIUS_M   = Properties.getValue("radius");
+    var target_lat = Properties.getValue("target_lattitude");
+    var target_lon = Properties.getValue("target_longitude");
+    var radius_m   = Properties.getValue("radius");
     const ACC_MAX_M  = 10.0;  // filtre précision GPS
 
     //global variables
@@ -134,12 +134,12 @@ class groundbranchappView extends WatchUi.View {
         lat = myLocation[0] as Float;
         lon = myLocation[1] as Float;
 
-        var dist = _haversine(lat, lon, TARGET_LAT, TARGET_LON); // meters
+        var dist = _haversine(lat, lon, target_lat, target_lon); // meters
         System.println("GPS dist=" + dist + "m acc=" + acc);
 
         // Only consider a trigger when both distance and accuracy are tight
         var accOk = (acc != null && acc <= ACC_MAX_M);
-        if (accOk && dist <= RADIUS_M && !_cooldown) {
+        if (accOk && dist <= radius_m && !_cooldown) {
             _triggerProximityAlert();
         }
 

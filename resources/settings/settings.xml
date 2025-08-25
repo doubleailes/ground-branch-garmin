@@ -1,0 +1,11 @@
+<settings>
+    <setting propertyKey="@Properties.target_lattitude" title="Target Latitude">
+        <settingConfig type="numeric" errorMessage="@Strings.MyNumberError" />
+    </setting>
+    <setting propertyKey="@Properties.target_longitude" title="Target Longitude">
+        <settingConfig type="numeric" errorMessage="@Strings.MyNumberError" />
+    </setting>
+    <setting propertyKey="@Properties.radius" title="Radius">
+        <settingConfig type="numeric" errorMessage="@Strings.MyNumberError" />
+    </setting>
+</settings>
