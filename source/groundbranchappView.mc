@@ -7,6 +7,7 @@ import Toybox.Timer;
 import Toybox.WatchUi;
 import Toybox.Position;     // <— GPS
 import Toybox.Attention;   // <— vibration
+import Toybox.Application.Properties;
 
 class groundbranchappView extends WatchUi.View {
 
@@ -27,9 +28,9 @@ class groundbranchappView extends WatchUi.View {
     var lat, lon;
 
     // Target (your coords)
-    const TARGET_LAT = 58.895626;
-    const TARGET_LON = 10.8323056;
-    const RADIUS_M   = 10.0;  // ton seuil
+    const TARGET_LAT = Properties.getValue("target_lattitude");
+    const TARGET_LON = Properties.getValue("target_longitude");
+    const RADIUS_M   = Properties.getValue("radius");
     const ACC_MAX_M  = 10.0;  // filtre précision GPS
 
     //global variables
