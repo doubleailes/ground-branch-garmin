@@ -1,6 +1,6 @@
 <properties>
     <property id="appVersion" type="string">0.0.2</property>
-    <property id="target_lattitude" type="float">48.8584</property>
+    <property id="target_latitude" type="float">48.8584</property>
     <property id="target_longitude" type="float">2.2945</property>
     <property id="radius" type="float">10.0</property>
 </properties>
