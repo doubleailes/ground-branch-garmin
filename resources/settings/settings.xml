@@ -1,11 +1,11 @@
 <settings>
-    <setting propertyKey="@Properties.target_latitude" title="Target Latitude">
+    <setting propertyKey="@Properties.target_latitude" title="Target Latitude" prompt="Enter target latitude">
         <settingConfig type="numeric" errorMessage="@Strings.MyNumberError" min="-90" max="90" />
     </setting>
-    <setting propertyKey="@Properties.target_longitude" title="Target Longitude">
+    <setting propertyKey="@Properties.target_longitude" title="Target Longitude" prompt="Enter target longitude">
         <settingConfig type="numeric" errorMessage="@Strings.MyNumberError" min="-180" max="180" />
     </setting>
-    <setting propertyKey="@Properties.radius" title="Radius">
+    <setting propertyKey="@Properties.radius" title="Radius" prompt="Enter radius">
         <settingConfig type="numeric" errorMessage="@Strings.MyNumberError" min="3" max="100" />
     </setting>
 </settings>
