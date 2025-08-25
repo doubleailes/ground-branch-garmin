@@ -28,7 +28,7 @@ class groundbranchappView extends WatchUi.View {
     var lat, lon;
 
     // Target (your coords)
-    var target_lat = Properties.getValue("target_lattitude");
+    var target_lat = Properties.getValue("target_latitude");
     var target_lon = Properties.getValue("target_longitude");
     var radius_m   = Properties.getValue("radius");
     const ACC_MAX_M  = 10.0;  // filtre précision GPS
