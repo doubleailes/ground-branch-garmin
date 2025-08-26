@@ -52,9 +52,21 @@ class groundbranchappView extends WatchUi.View {
 
     // Load custom settings from Properties
     function loadUserSettings() {
+        // Load settings with fallback to default values
         _targetLat = Properties.getValue("target_latitude");
+        if (_targetLat == null) {
+            _targetLat = 48.8584; // Default: Eiffel Tower
+        }
+        
         _targetLon = Properties.getValue("target_longitude");
+        if (_targetLon == null) {
+            _targetLon = 2.2945; // Default: Eiffel Tower
+        }
+        
         _proximityRadius = Properties.getValue("radius");
+        if (_proximityRadius == null) {
+            _proximityRadius = 10.0; // Default: 10 meters
+        }
         
         // Print loaded settings for debugging
         System.println("Target coordinates loaded: " + _targetLat + ", " + _targetLon);
@@ -285,6 +297,11 @@ class groundbranchappView extends WatchUi.View {
         if (_timer != null) {
             _timer.stop();
         }
+    }
+
+    // Public method to reload settings when changed via Garmin Connect
+    public function reloadSettings() as Void {
+        loadUserSettings();
     }
 
 }

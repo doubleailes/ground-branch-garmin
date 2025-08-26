@@ -8,17 +8,17 @@
     <strings>
         <string id="target_latitude">Target Latitude</string>
         <string id="target_longitude">Target Longitude</string>
-        <string id="radius">Proximity Radius</string>
+        <string id="radius">Proximity Radius (meters)</string>
     </strings>
     <settings>
-    <setting propertyKey="@Properties.target_latitude" title="@Strings.target_latitude">
-        <settingConfig type="numeric" min="-90.0" max="90.0" />
-    </setting>
-    <setting propertyKey="@Properties.target_longitude" title="@Strings.target_longitude">
-        <settingConfig type="numeric"  min="-180.0" max="180.0" />
-    </setting>
-    <setting propertyKey="@Properties.radius" title="@Strings.radius">
-        <settingConfig type="numeric"  min="3.0" max="100.0" />
-    </setting>
-</settings>
+        <setting propertyKey="@Properties.target_latitude" title="@Strings.target_latitude">
+            <settingConfig type="numeric" min="-90.0" max="90.0" />
+        </setting>
+        <setting propertyKey="@Properties.target_longitude" title="@Strings.target_longitude">
+            <settingConfig type="numeric" min="-180.0" max="180.0" />
+        </setting>
+        <setting propertyKey="@Properties.radius" title="@Strings.radius">
+            <settingConfig type="numeric" min="3.0" max="100.0" />
+        </setting>
+    </settings>
 </resources>
