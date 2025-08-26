@@ -105,7 +105,7 @@ class groundbranchappView extends WatchUi.View {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         System.println("Updating groundbranchappView");
-        loadUserSettings();
+        // loadUserSettings(); // Moved to onShow()
         if (_alertActive) {
             _drawBackground(dc);
         }
