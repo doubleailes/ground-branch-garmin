@@ -5,6 +5,8 @@ import Toybox.System;
 
 class groundbranchappApp extends Application.AppBase {
 
+    var _view;
+
     function initialize() {
         AppBase.initialize();
     }
@@ -19,11 +21,15 @@ class groundbranchappApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new groundbranchappView() ];
+        _view = new groundbranchappView();
+        return [ _view ];
     }
-    //! For this app all that needs to be done is trigger a WatchUi refresh
-    //! since the settings are only used in onUpdate().
+    //! Called when the user updates the settings of the app via Garmin Connect
+    //! Reloads the settings and refreshes the UI
     public function onSettingsChanged() as Void {
+        if (_view != null) {
+            _view.reloadSettings();
+        }
         WatchUi.requestUpdate();
     }
 
