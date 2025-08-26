@@ -21,9 +21,10 @@ class groundbranchappApp extends Application.AppBase {
     function getInitialView() as [Views] or [Views, InputDelegates] {
         return [ new groundbranchappView() ];
     }
+    //! For this app all that needs to be done is trigger a WatchUi refresh
+    //! since the settings are only used in onUpdate().
+    public function onSettingsChanged() as Void {
+        WatchUi.requestUpdate();
+    }
 
-}
-
-function getApp() as groundbranchappApp {
-    return Application.getApp() as groundbranchappApp;
 }

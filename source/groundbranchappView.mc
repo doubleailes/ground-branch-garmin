@@ -27,10 +27,12 @@ class groundbranchappView extends WatchUi.View {
     var _cooldownTimer;
     var lat, lon;
 
+    // Target coordinates - will be loaded from settings
+    var _targetLat;
+    var _targetLon;
+    var _proximityRadius;
+
     // Target (your coords)
-    var target_lat = Properties.getValue("target_latitude");
-    var target_lon = Properties.getValue("target_longitude");
-    var radius_m   = Properties.getValue("radius");
     const ACC_MAX_M  = 10.0;  // filtre précision GPS
 
     //global variables
@@ -40,8 +42,23 @@ class groundbranchappView extends WatchUi.View {
     var isTS = false;
 
     function initialize() {
+
+        // Load user settings
+        loadUserSettings();
+
         System.println("Initializing groundbranchappView");
         View.initialize();
+    }
+
+    // Load custom settings from Properties
+    function loadUserSettings() {
+        _targetLat = Properties.getValue("target_latitude");
+        _targetLon = Properties.getValue("target_longitude");
+        _proximityRadius = Properties.getValue("radius");
+        
+        // Print loaded settings for debugging
+        System.println("Target coordinates loaded: " + _targetLat + ", " + _targetLon);
+        System.println("Proximity radius: " + _proximityRadius + "m");
     }
 
     // Load your resources here
@@ -58,6 +75,8 @@ class groundbranchappView extends WatchUi.View {
     // loading resources into memory.
     function onShow() as Void {
         System.println("Showing groundbranchappView");
+        // Reload settings in case they've changed
+        loadUserSettings();
         Position.enableLocationEvents( Position.LOCATION_CONTINUOUS, method( :onPosition ) );
         _timer = new Timer.Timer();
         _timer.start(method(:_onTick), 1000, true); // 1000 ms, repeating
@@ -86,6 +105,7 @@ class groundbranchappView extends WatchUi.View {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         System.println("Updating groundbranchappView");
+        loadUserSettings();
         if (_alertActive) {
             _drawBackground(dc);
         }
@@ -134,12 +154,13 @@ class groundbranchappView extends WatchUi.View {
         lat = myLocation[0] as Float;
         lon = myLocation[1] as Float;
 
-        var dist = _haversine(lat, lon, target_lat, target_lon); // meters
-        System.println("GPS dist=" + dist + "m acc=" + acc);
+        // Calculate distance to target coordinates
+        var distanceToTarget = _haversine(lat, lon, _targetLat, _targetLon);
+        System.println("GPS dist=" + distanceToTarget + "m acc=" + acc);
 
         // Only consider a trigger when both distance and accuracy are tight
         var accOk = (acc != null && acc <= ACC_MAX_M);
-        if (accOk && dist <= radius_m && !_cooldown) {
+        if (accOk && distanceToTarget <= _proximityRadius && !_cooldown) {
             _triggerProximityAlert();
         }
 

@@ -1,6 +1,24 @@
-<properties>
-    <property id="appVersion" type="string">0.0.2</property>
-    <property id="target_latitude" type="float">48.8584</property>
-    <property id="target_longitude" type="float">2.2945</property>
-    <property id="radius" type="float">10.0</property>
-</properties>
+<resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <properties>
+        <property id="appVersion" type="string">0.0.2</property>
+        <property id="target_latitude" type="float">48.8584</property>
+        <property id="target_longitude" type="float">2.2945</property>
+        <property id="radius" type="float">10.0</property>
+    </properties>
+    <strings>
+        <string id="target_latitude">Target Latitude</string>
+        <string id="target_longitude">Target Longitude</string>
+        <string id="radius">Proximity Radius</string>
+    </strings>
+    <settings>
+    <setting propertyKey="@Properties.target_latitude" title="@Strings.target_latitude">
+        <settingConfig type="numeric" min="-90.0" max="90.0" />
+    </setting>
+    <setting propertyKey="@Properties.target_longitude" title="@Strings.target_longitude">
+        <settingConfig type="numeric"  min="-180.0" max="180.0" />
+    </setting>
+    <setting propertyKey="@Properties.radius" title="@Strings.radius">
+        <settingConfig type="numeric"  min="3.0" max="100.0" />
+    </setting>
+</settings>
+</resources>
