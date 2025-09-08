@@ -12,3 +12,7 @@ the layout of Ground Branch video games operator's watch.
 ### Objective detection
 
 ![](references/16900_8.jpg)
+
+## Preview
+
+![Actual result](IMG_2039.mov)
