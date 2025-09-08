@@ -15,4 +15,4 @@ the layout of Ground Branch video games operator's watch.
 
 ## Preview
 
-![Actual result](IMG_2039.mov)
+![Actual result](./IMG_2039.mov)
