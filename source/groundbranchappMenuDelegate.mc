@@ -13,7 +13,7 @@ class groundbranchappMenuDelegate extends WatchUi.MenuInputDelegate {
         if (item == :item_1) {
             // Show about dialog
             var dialog = new WatchUi.Confirmation(Rez.Strings.about_text);
-            WatchUi.pushView(dialog, new AboutConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(dialog, new GenericConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
         } else if (item == :item_2) {
             // Show settings info dialog
             var lat = Properties.getValue("target_latitude");
@@ -21,9 +21,9 @@ class groundbranchappMenuDelegate extends WatchUi.MenuInputDelegate {
             var radius = Properties.getValue("radius");
             
             // Fallback to defaults if null
-            if (lat == null) { lat = 48.8584; }
-            if (lon == null) { lon = 2.2945; }
-            if (radius == null) { radius = 10.0; }
+            if (lat == null) { lat = Constants.DEFAULT_TARGET_LAT; }
+            if (lon == null) { lon = Constants.DEFAULT_TARGET_LON; }
+            if (radius == null) { radius = Constants.DEFAULT_PROXIMITY_RADIUS; }
             
             // Format settings values for display
             var latStr = lat.format("%.4f");
@@ -37,23 +37,14 @@ class groundbranchappMenuDelegate extends WatchUi.MenuInputDelegate {
             );
             
             var dialog = new WatchUi.Confirmation(message);
-            WatchUi.pushView(dialog, new SettingsConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(dialog, new GenericConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
         }
     }
 
 }
 
-class AboutConfirmationDelegate extends WatchUi.ConfirmationDelegate {
-    function initialize() {
-        ConfirmationDelegate.initialize();
-    }
-
-    function onResponse(response as WatchUi.Confirm) as Boolean {
-        return true;
-    }
-}
-
-class SettingsConfirmationDelegate extends WatchUi.ConfirmationDelegate {
+// Generic confirmation delegate for simple OK/Cancel dialogs
+class GenericConfirmationDelegate extends WatchUi.ConfirmationDelegate {
     function initialize() {
         ConfirmationDelegate.initialize();
     }

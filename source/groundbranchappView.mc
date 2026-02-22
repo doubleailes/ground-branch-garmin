@@ -63,9 +63,9 @@ class groundbranchappView extends WatchUi.View {
         _proximityRadius = Properties.getValue("radius");
         
         // Fallback to defaults if somehow null (should not happen with properties.xml defaults)
-        if (_targetLat == null) { _targetLat = 48.8584; }
-        if (_targetLon == null) { _targetLon = 2.2945; }
-        if (_proximityRadius == null) { _proximityRadius = 10.0; }
+        if (_targetLat == null) { _targetLat = Constants.DEFAULT_TARGET_LAT; }
+        if (_targetLon == null) { _targetLon = Constants.DEFAULT_TARGET_LON; }
+        if (_proximityRadius == null) { _proximityRadius = Constants.DEFAULT_PROXIMITY_RADIUS; }
         
         // Print loaded settings for debugging
         System.println("Target coordinates loaded: " + _targetLat + ", " + _targetLon);
