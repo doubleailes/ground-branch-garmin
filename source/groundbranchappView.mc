@@ -27,7 +27,7 @@ class groundbranchappView extends WatchUi.View {
     var _cooldownTimer;
     var lat, lon;
 
-    // Target coordinates - loaded from user settings in properties.xml
+    // Target coordinates - loaded from user settings via Properties API
     // These can be configured through Garmin Connect app
     // Defaults: Eiffel Tower (48.8584, 2.2945)
     var _targetLat;
