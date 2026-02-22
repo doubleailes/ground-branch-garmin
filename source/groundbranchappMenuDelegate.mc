@@ -19,6 +19,12 @@ class groundbranchappMenuDelegate extends WatchUi.MenuInputDelegate {
             var lat = Properties.getValue("target_latitude");
             var lon = Properties.getValue("target_longitude");
             var radius = Properties.getValue("radius");
+            
+            // Fallback to defaults if null
+            if (lat == null) { lat = 48.8584; }
+            if (lon == null) { lon = 2.2945; }
+            if (radius == null) { radius = 10.0; }
+            
             var message = Lang.format("Lat: $1$°\nLon: $2$°\nRadius: $3$m\n\nChange in\nGarmin Connect", [lat.format("%.4f"), lon.format("%.4f"), radius.format("%.0f")]);
             var dialog = new WatchUi.Confirmation(message);
             WatchUi.pushView(dialog, new SettingsConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
