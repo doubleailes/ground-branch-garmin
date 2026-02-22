@@ -6,9 +6,9 @@
         <property id="radius" type="float">10.0</property>
     </properties>
     <strings>
-        <string id="target_latitude">Target Latitude</string>
-        <string id="target_longitude">Target Longitude</string>
-        <string id="radius">Proximity Radius</string>
+        <string id="target_latitude">Target Latitude (°)</string>
+        <string id="target_longitude">Target Longitude (°)</string>
+        <string id="radius">Proximity Radius (m)</string>
     </strings>
     <settings>
     <setting propertyKey="@Properties.target_latitude" title="@Strings.target_latitude">

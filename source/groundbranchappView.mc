@@ -27,10 +27,12 @@ class groundbranchappView extends WatchUi.View {
     var _cooldownTimer;
     var lat, lon;
 
-    // Target coordinates - will be loaded from settings
+    // Target coordinates - loaded from user settings in properties.xml
+    // These can be configured through Garmin Connect app
+    // Defaults: Eiffel Tower (48.8584, 2.2945)
     var _targetLat;
     var _targetLon;
-    var _proximityRadius;
+    var _proximityRadius;  // in meters
 
     // Target (your coords)
     const ACC_MAX_M  = 10.0;  // filtre précision GPS
@@ -51,6 +53,10 @@ class groundbranchappView extends WatchUi.View {
     }
 
     // Load custom settings from Properties
+    // Settings are configured through Garmin Connect app
+    // - target_latitude: -90° to +90° (default: 48.8584)
+    // - target_longitude: -180° to +180° (default: 2.2945)
+    // - radius: 3m to 100m (default: 10m)
     function loadUserSettings() {
         _targetLat = Properties.getValue("target_latitude");
         _targetLon = Properties.getValue("target_longitude");
