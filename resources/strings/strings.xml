@@ -4,6 +4,9 @@
 
     <string id="prompt">Click the menu button</string>
 
-    <string id="menu_label_1">Item 1</string>
-    <string id="menu_label_2">Item 2</string>
+    <string id="menu_label_1">About</string>
+    <string id="menu_label_2">Settings Info</string>
+    
+    <string id="about_text">Ground Branch Watch\nCompass + Proximity Alert</string>
+    <string id="settings_info">Configure location\nand radius in\nGarmin Connect</string>
 </strings>
