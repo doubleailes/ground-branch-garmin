@@ -1,7 +1,6 @@
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
-import Toybox.Application.Properties;
 
 class groundbranchappMenuDelegate extends WatchUi.MenuInputDelegate {
 
@@ -15,25 +14,20 @@ class groundbranchappMenuDelegate extends WatchUi.MenuInputDelegate {
             var dialog = new WatchUi.Confirmation(Rez.Strings.about_text);
             WatchUi.pushView(dialog, new GenericConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
         } else if (item == :item_2) {
-            // Show settings info dialog
-            var lat = Properties.getValue("target_latitude");
-            var lon = Properties.getValue("target_longitude");
-            var radius = Properties.getValue("radius");
+            // Show settings info dialog - load and format current settings
+            var latitude = Constants.getPropertyOrDefault("target_latitude", Constants.DEFAULT_TARGET_LAT);
+            var longitude = Constants.getPropertyOrDefault("target_longitude", Constants.DEFAULT_TARGET_LON);
+            var radius = Constants.getPropertyOrDefault("radius", Constants.DEFAULT_PROXIMITY_RADIUS);
             
-            // Fallback to defaults if null
-            if (lat == null) { lat = Constants.DEFAULT_TARGET_LAT; }
-            if (lon == null) { lon = Constants.DEFAULT_TARGET_LON; }
-            if (radius == null) { radius = Constants.DEFAULT_PROXIMITY_RADIUS; }
-            
-            // Format settings values for display
-            var latStr = lat.format("%.4f");
-            var lonStr = lon.format("%.4f");
-            var radiusStr = radius.format("%.0f");
+            // Format values for display
+            var latitudeString = latitude.format("%.4f");
+            var longitudeString = longitude.format("%.4f");
+            var radiusString = radius.format("%.0f");
             
             // Build message with current settings
             var message = Lang.format(
                 "Lat: $1$°\nLon: $2$°\nRadius: $3$m\n\nChange in\nGarmin Connect",
-                [latStr, lonStr, radiusStr]
+                [latitudeString, longitudeString, radiusString]
             );
             
             var dialog = new WatchUi.Confirmation(message);

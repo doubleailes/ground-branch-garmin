@@ -58,14 +58,9 @@ class groundbranchappView extends WatchUi.View {
     // - target_longitude: -180° to +180° (default: 2.2945)
     // - radius: 3m to 100m (default: 10m)
     function loadUserSettings() {
-        _targetLat = Properties.getValue("target_latitude");
-        _targetLon = Properties.getValue("target_longitude");
-        _proximityRadius = Properties.getValue("radius");
-        
-        // Fallback to defaults if somehow null (should not happen with properties.xml defaults)
-        if (_targetLat == null) { _targetLat = Constants.DEFAULT_TARGET_LAT; }
-        if (_targetLon == null) { _targetLon = Constants.DEFAULT_TARGET_LON; }
-        if (_proximityRadius == null) { _proximityRadius = Constants.DEFAULT_PROXIMITY_RADIUS; }
+        _targetLat = Constants.getPropertyOrDefault("target_latitude", Constants.DEFAULT_TARGET_LAT);
+        _targetLon = Constants.getPropertyOrDefault("target_longitude", Constants.DEFAULT_TARGET_LON);
+        _proximityRadius = Constants.getPropertyOrDefault("radius", Constants.DEFAULT_PROXIMITY_RADIUS);
         
         // Print loaded settings for debugging
         System.println("Target coordinates loaded: " + _targetLat + ", " + _targetLon);
